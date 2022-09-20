@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Multiplication Table</title>
+        <style>
+            .tbl{
+                width: auto;
+                margin-left: 100px;
+                margin-top: 50px;
+                margin-left: 400px;
+                position: absolute;
+            }
+            .td{
+                border: 1px black solid;
+                height: 40px;
+                width: 40px;
+                background-color: violet;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+
+        <script type="text/javascript">
+
+        document.write('<table class="tbl">');
+            for(var i = 1; i<=15; i++){
+                document.write("<tr>");
+                
+                for(var j =1; j<=15; j++){
+                    var num = j * i;
+                    document.write('<td class="td">'+num+'</td>');
+                }
+                document.write("</tr>");
+                
+            }
+            
+        </script>
+    </body>
+</html>
